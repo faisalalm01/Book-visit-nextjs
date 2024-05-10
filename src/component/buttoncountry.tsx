@@ -25,7 +25,7 @@ const CountrySelector: React.FC<CountrySelectorProps> = ({ countries, onSelect }
     return (
         <>
             <select value={selectedCountry} onChange={(e) => handleCountrySelect(e.target.value)} title="asdasdasd" id="countries" className="pl-3 block py-3 w-full text-sm bg-neutral-600 appearance-none focus:outline-none">
-                {/* <option className="" value="">Country</option> */}
+                <option className="" value="">Country</option>
                 {countries.map((country) => (
                     <option className="bg-black" key={country.value} value={country.value}>
                         {country.title}

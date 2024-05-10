@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface ExperienceStepProps {
   onNextStep: () => void;
 }
@@ -60,14 +62,9 @@ const Experience: React.FC<ExperienceStepProps> = ({ onNextStep }) => {
           />
         </div>
         <div className="relative z-0 w-full mb-5 group">
-          <input
-            type="text"
-            name=""
-            id=""
-            className="block py-2.5 pl-2 w-full text-sm bg-neutral-600 focus:outline-none"
-            placeholder="Whatsapp number"
-            required
-          />
+          <select value="" title="" id="" className="pl-3 block py-3 w-full text-sm bg-neutral-600 appearance-none focus:outline-none">
+                    <option className="bg-black"></option>
+            </select>
         </div>
       </div>
       <button
